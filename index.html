@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Planety</title>
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+	<nav class="navbar" style="background-color: #e3f2fd;">
+		<div class="container-fluid">
+		  <a class="navbar-brand" href="#">
+		  <img src = "https://cdn-icons-png.flaticon.com/512/3336/3336008.png" width="40px" height="40px">
+		  Planety
+			</a>
+		</div>
+	  </nav>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+	<table id="planetki" class="table">
+		<tbody id="a">
+		</tbody>
+	</table>
+    <script>
+      	const xmlhttp =new XMLHttpRequest();
+		var url ="https://api.npoint.io/ca9906d177282d8a7052";
+		
+		function myFunction() {
+			myArr = JSON.parse(localStorage["json"]);
+			let out = "";
+			var i;
+			for(i = 0; i < 10; i++) {
+				out += '<thead><td id="nazwa">'+ myArr.planety[i].nazwa + 
+					 '</td><td id ="grafika"><img src="'+ myArr.planety[i].obraz +'"><img></td>'+ '<td><p><button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample'+i+'" aria-expanded="false" aria-controls="collapseExample">Szczegóły</button></p><div class="collapse" id="collapseExample'+i+'"><div class="card card-body">' + 
+						'<div id="szczegoly">' +'<b>Typ: </b><br>'+ myArr.planety[i].typ +  '<br><br><b>Rozmiar: <br>Masa:</b> ' + myArr.planety[i].rozmiar.masa + '<br><b> Promień równikowy:</b> ' + myArr.planety[i].rozmiar.promien_rownikowy +'<br><b>Promień biegunowy:</b> ' + myArr.planety[i].rozmiar.promien_biegunowy +'<br><b>Pole powierzchni:</b> ' + myArr.planety[i].rozmiar.pole_powierzchni + '<br><br><b>Średnia temperatura:</b> ' + myArr.planety[i].srednia_temperatura + '<br><b>Prędkość ruchu:</b> ' + myArr.planety[i].predkosc_ruchu +
+						'</td></div></div></div>';
+			}
+			document.getElementById("a").innerHTML = out;
+		}	
+
+		xmlhttp.onreadystatechange = function() {
+			if (this.readyState == XMLHttpRequest.DONE && this.status == 200) {
+				myArr = JSON.parse(this.responseText);
+				localStorage["json"] = this.responseText;
+				myFunction();
+			}
+			else {
+            	myFunction();
+          }
+		};
+		xmlhttp.open("GET", url);	
+		xmlhttp.setRequestHeader("Content-type", "application/json");
+	</script>
+</body>
+</html>

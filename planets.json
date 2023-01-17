@@ -1,0 +1,175 @@
+{
+    "planety":
+    [
+        {
+            "id":1,
+            "nazwa":"Merkury",
+            "typ":"planeta skalista",
+            "obraz":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Mercury_in_true_color.jpg/240px-Mercury_in_true_color.jpg",
+            "rozmiar":[
+                {
+                    "masa":"0,055 M",
+                    "promien-rownikowy":"2439,7 km",
+                    "promien-biegunowy":"2439,7 km",
+                    "pole-powierzchni":"0,147 Ziemi"
+                }
+            ],
+            "srednia-temperatura":"442,5 K",
+            "predkosc-ruchu":"47,36 km/s"
+
+        },
+        {
+            "id":2,
+            "nazwa":"Wenus",
+            "typ":"planeta skalista",
+            "obraz":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/PIA23791-Venus-NewlyProcessedView-20200608.jpg/220px-PIA23791-Venus-NewlyProcessedView-20200608.jpg",
+            "rozmiar":[
+                {
+                    "masa":"0,815 M",
+                    "promien-rownikowy":"6051,8 km",
+                    "promien-biegunowy":"6051,8 km",
+                    "pole-powierzchni":"0,902 Ziemi"
+                }
+            ],
+            "srednia-temperatura":"737 K",
+            "predkosc-ruchu":"35,02 km/s"
+
+        },
+        {
+            "id":3,
+            "nazwa":"Ziemia",
+            "typ":"planeta skalista",
+            "obraz":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/The_Blue_Marble_%28remastered%29.jpg/640px-The_Blue_Marble_%28remastered%29.jpg",
+            "rozmiar":[
+                {
+                    "masa":"5,97219×1024 kg",
+                    "promien-rownikowy":"6378,137 km",
+                    "promien-biegunowy":"6356,752 km",
+                    "pole-powierzchni":"510 072 000 km²"
+                }
+            ],
+            "srednia-temperatura":"288 K",
+            "predkosc-ruchu":"29,78 km/s"
+
+        },
+        {
+            "id":4,
+            "nazwa":"Mars",
+            "typ":"planeta skalista",
+            "obraz":"https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Mars_Valles_Marineris.jpeg/1200px-Mars_Valles_Marineris.jpeg",
+            "rozmiar":[
+                {
+                    "masa":"0,107 M",
+                    "promien-rownikowy":"3396,2 km",
+                    "promien-biegunowy":"3376,2 km",
+                    "pole-powierzchni":"0,284 Ziemi"
+                }
+            ],
+            "srednia-temperatura":"210 K",
+            "predkosc-ruchu":"24,07 km/s"
+
+        },
+        {
+            "id":5,
+            "nazwa":"Jowisz",
+            "typ":"gazowy olbrzym",
+            "obraz":"https://upload.wikimedia.org/wikipedia/commons/0/0d/Jupiter_and_its_shrunken_Great_Red_Spot_%28cropped%29.jpg",
+            "rozmiar":[
+                {
+                    "masa":"317,83 M",
+                    "promien-rownikowy":"71 492 km",
+                    "promien-biegunowy":"66 854 km",
+                    "pole-powierzchni":"120,5 Ziemi"
+                }
+            ],
+            "srednia-temperatura":"165 K",
+            "predkosc-ruchu":"13,06 km/s"
+
+        },
+        {
+            "id":6,
+            "nazwa":"Saturn",
+            "typ":"gazowy olbrzym",
+            "obraz":"https://sites.google.com/site/planetyukladsloneczny/_/rsrc/1445955637248/saturn/Saturn.png",
+            "rozmiar":[
+                {
+                    "masa":"95,16 M",
+                    "promien-rownikowy":"60 268 km",
+                    "promien-biegunowy":"54 364 km",
+                    "pole-powierzchni":"83,703 Ziemi"
+                }
+            ],
+            "srednia-temperatura":"134 K",
+            "predkosc-ruchu":"9,68 km/s"
+
+        },
+        {
+            "id":7,
+            "nazwa":"Uran",
+            "typ":"gazowy olbrzym",
+            "obraz":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Uranus2_%28cropped%29-1.jpg/1200px-Uranus2_%28cropped%29-1.jpg",
+            "rozmiar":[
+                {
+                    "masa":"14,54 M",
+                    "promien-rownikowy":"25 559 km",
+                    "promien-biegunowy":"24 973 km",
+                    "pole-powierzchni":"15,849 Ziemi"
+                }
+            ],
+            "srednia-temperatura":"76 K",
+            "predkosc-ruchu":"6,8 km/s"
+
+        },
+        {
+            "id":8,
+            "nazwa":"Neptun",
+            "typ":"gazowy olbrzym",
+            "obraz":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Neptune_-_Voyager_2_%2829347980845%29_flatten_crop.jpg/800px-Neptune_-_Voyager_2_%2829347980845%29_flatten_crop.jpg",
+            "rozmiar":[
+                {
+                    "masa":"317,83 M",
+                    "promien-rownikowy":"71 492 km",
+                    "promien-biegunowy":"66 854 km",
+                    "pole-powierzchni":"120,5 Ziemi"
+                }
+            ],
+            "srednia-temperatura":"165 K",
+            "predkosc-ruchu":"5,43 km/s"
+
+        },
+        {
+            "id":9,
+            "nazwa":"Ceres",
+            "typ":"planeta karłowata",
+            "obraz":"https://upload.wikimedia.org/wikipedia/commons/b/b2/Color_global_view_of_Ceres_-_Oxo_and_Haulani_craters.png",
+            "rozmiar":[
+                {
+                    "masa":"0,000157 M",
+                    "promien-rownikowy":"473 km",
+                    "promien-biegunowy":"473 km",
+                    "pole-powierzchni":"0,0055 Ziemi"
+                }
+            ],
+            "srednia-temperatura":"167 K",
+            "predkosc-ruchu":"x"
+
+        },
+        {
+            "id":10,
+            "nazwa":"Pluton",
+            "typ":"planeta karłowata",
+            "obraz":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Pluto-01_Stern_03_Pluto_Color_TXT.jpg/1200px-Pluto-01_Stern_03_Pluto_Color_TXT.jpg",
+            "rozmiar":[
+                {
+                    "masa":"0,00219 M",
+                    "promien-rownikowy":"1188 km",
+                    "promien-biegunowy":"1188 km",
+                    "pole-powierzchni":"0,035 Ziemi"
+                }
+            ],
+            "srednia-temperatura":"31 K",
+            "predkosc-ruchu":"4,67 km/s"
+
+        }
+    ]
+}
